@@ -4,7 +4,23 @@ const assert = require("assert");
 const join = require("./index.js");
 
 const tests = {
-	"assign" () {
+	"assign instances" () {
+		function A() {
+			this.a = 1;
+		}
+
+		function B() {}
+
+		B.prototype.b = function () {
+			return this.a;
+		};
+
+		const a = new A();
+		const b = new B();
+		join.assign(a, b);
+		assert.strictEqual(a.b(), 1);
+	},
+	"assign tree" () {
 		const source = {
 			a: [1, 2],
 			b: {c: 3},
