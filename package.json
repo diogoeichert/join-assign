@@ -1,6 +1,6 @@
 {
 	"name": "join-assign",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "deep assign to target from source",
 	"main": "src/index.js",
 	"scripts": {
@@ -27,7 +27,9 @@
 	"bugs": {
 		"url": "https://github.com/diogoeichert/join-assign/issues"
 	},
-	"funding": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=diogoeichert%40icloud.com&item_name=join-assign&currency_code=EUR",
+	"funding": {
+		"url": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=diogoeichert%40icloud.com&item_name=join-assign&currency_code=EUR"
+	},
 	"homepage": "https://github.com/diogoeichert/join-assign#readme",
 	"devDependencies": {
 		"eslint": "^7.19.0",
